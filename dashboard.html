@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/styles.min.css" />
+
+    <title>Welcome to the DevConnector</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="dashboard.html"><i class="fas fa-code"></i> DevConnector</a>
+      </h1>
+      <ul>
+        <li>
+          <a href="developers.html">Developers</a>
+        </li>
+        <li><a href="posts.html">Posts</a></li>
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-user"></i>
+            <span class="hide-span-small">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="login.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="hide-span-small">Logout</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <section class="container">
+      <h1 class="text-l text-primary">Dashboard</h1>
+      <p class="lead">
+        <i class="fas fa-user"></i>
+        Welcome John Doe
+      </p>
+      <div class="dash-buttons">
+        <a href="createprofile.html" class="btn">
+          <i class="fas fa-user-circle text-primary"></i>
+          Edit Profile
+        </a>
+        <a href="addexperience.html" class="btn">
+          <i class="fab fa-black-tie text-primary"></i>
+          Add Experience
+        </a>
+        <a href="addeducation.html" class="btn">
+          <i class="fas fa-graduation-cap text-primary"></i>
+          Add Education
+        </a>
+      </div>
+
+      <h2 class="my-2">Experience Credentials</h2>
+
+      <table class="table">
+        <thead>
+          <tr class="table-header">
+            <td>Company</td>
+            <td class="hide-sm">Title</td>
+            <td class="hide-sm">Years</td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Microsoft</td>
+            <td class="hide-sm">Senior Developer</td>
+            <td class="hide-sm">Oct 2011-Current</td>
+            <td>
+              <button class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Sun Microsystems</td>
+            <td class="hide-sm">Senior Developer</td>
+            <td class="hide-sm">Oct 2004-Nov 2010</td>
+            <td>
+              <button class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="my-2">Education Credentials</h2>
+      <table class="table">
+        <thead>
+          <tr class="table-header">
+            <td>School</td>
+            <td class="hide-sm">Degree</td>
+            <td class="hide-sm">Years</td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>University of Washington</td>
+            <td class="hide-sm">Masters</td>
+            <td class="hide-sm">Sep 1993-June 1999</td>
+            <td>
+              <button class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button class="btn btn-danger">
+        <i class="fas fa-user-minus"></i>
+        Delete My Account
+      </button>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/578ca4434d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

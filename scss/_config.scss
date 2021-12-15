@@ -1,0 +1,58 @@
+//Font:
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+//Defining variables:
+$primary-color: #17a2b8;
+$dark-color: #343a40;
+$light-color: #f4f4f4;
+$danger-color: #dc3545;
+$success-color: #28a745;
+$twitter: #38a1f3;
+$facebook: #3b5998;
+$youtube: #c4302b;
+$linkedin: #0077b5;
+$instagram: #3f729b;
+$max-width: 1100px;
+
+//Mixins:
+@mixin set-background-color($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+@mixin transition-ease {
+  transition: all 0.3s ease;
+}
+
+//Functions:
+@function set-text-color($color) {
+  @if (lightness($color) > 60) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+//Loops:
+$margins: (1, 2, 3, 4, 5);
+@each $margin in $margins {
+  //All around margin:
+  .m-#{$margin} {
+    margin: #{$margin}rem;
+  }
+
+  //Vertical margin:
+  .my-#{$margin} {
+    margin: #{$margin}rem 0;
+  }
+
+  //All around padding:
+  .p-#{$margin} {
+    padding: #{$margin}rem;
+  }
+
+  //Vertical padding:
+  .py-#{$margin} {
+    padding: #{$margin}rem 0;
+  }
+}

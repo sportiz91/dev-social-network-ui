@@ -1,0 +1,102 @@
+.form {
+  &-group {
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    margin-top: 1.2rem;
+    border: 1px solid #ccc;
+  }
+
+  &-group.special {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  &-text {
+    color: #888;
+    display: block;
+  }
+
+  &-textarea {
+    display: block;
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+  }
+
+  &-textarea-createprofile {
+    margin-bottom: 0;
+    margin-top: 1.2rem;
+  }
+
+  &-optional {
+    display: inline;
+  }
+
+  &-h4 {
+    margin-top: 1rem;
+  }
+
+  &-socials {
+    margin-bottom: 2rem;
+
+    > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > div {
+        margin: 0;
+        margin-bottom: 0.75rem;
+        margin-top: 0.75rem;
+        padding: 0;
+        flex-basis: 90%;
+      }
+    }
+
+    input {
+      padding: 0.75rem 0.5rem;
+      width: 100%;
+    }
+
+    i {
+      flex-basis: 10%;
+    }
+
+    .fa-twitter {
+      color: $twitter;
+    }
+
+    .fa-facebook {
+      color: $facebook;
+    }
+
+    .fa-youtube {
+      color: $youtube;
+    }
+
+    .fa-linkedin {
+      color: $linkedin;
+    }
+
+    .fa-instagram {
+      color: $instagram;
+    }
+  }
+
+  & > div input[type="text"],
+  & > div input[type="email"],
+  & > div input[type="password"],
+  & > div input[type="date"],
+  & > div select,
+  & > div textarea {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  & input[type="submit"] {
+    font: inherit;
+    padding: 0.4rem 1.25rem;
+  }
+}
